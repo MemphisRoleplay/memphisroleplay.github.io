@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Memphis Framework',
-  tagline: 'Framework focado em criar experiências enriquecedoras para jogadores de Grand Theft Auto V.',
+  title: 'Memphis Roleplay',
+  tagline: 'Roleplay focado em criar experiências enriquecedoras para jogadores de Grand Theft Auto V.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://memphisframework.github.io',
+  url: 'https://memphisroleplay.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'MemphisFramework', // Usually your GitHub org/user name.
-  projectName: 'MemphisFramework.github.io', // Usually your repo name.
+  organizationName: 'MemphisRoleplay', // Usually your GitHub org/user name.
+  projectName: 'MemphisRoleplay.github.io', // Usually your repo name.
   deploymentBranch: 'deploy',
   trailingSlash: false,
 
@@ -44,14 +44,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/MemphisFramework/memphisframework.github.io/tree/main/',
+            'https://github.com/MemphisRoleplay/memphisroleplay.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/MemphisFramework/memphisframework.github.io/tree/main/',
+            'https://github.com/MemphisRoleplay/memphisroleplay.github.io/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -66,9 +66,9 @@ const config = {
       // Replace with your project's social card
       image: 'img/memphis-social-card.jpg',
       navbar: {
-        title: 'Memphis Framework',
+        title: 'Memphis Roleplay',
         logo: {
-          alt: 'Memphis Framework',
+          alt: 'Memphis Roleplay',
           src: 'img/logo.png',
         },
         items: [
@@ -80,7 +80,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'right'},
           {
-            href: 'https://github.com/memphisframework',
+            href: 'https://github.com/memphisroleplay',
             label: 'GitHub',
             position: 'right',
           },
@@ -124,12 +124,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/memphisframework',
+                href: 'https://github.com/memphisroleplay',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Memphis Framework.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Memphis Roleplay.`,
       },
       prism: {
         theme: lightCodeTheme,
