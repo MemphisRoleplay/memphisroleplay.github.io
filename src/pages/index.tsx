@@ -27,10 +27,8 @@ function HomepageHeader() {
 }
 
 export default function Home(): JSX.Element {
-  const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={siteConfig.title}
       description="Documentação do Memphis Framework, o framework focado em criar experiências enriquecedoras para jogadores de Grand Theft Auto V.">
       <HomepageHeader />
       <main>

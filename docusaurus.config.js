@@ -41,15 +41,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/MemphisRoleplay/memphisroleplay.github.io/tree/main/',
+          routeBasePath: 'docs',
+          editUrl: 'https://github.com/MemphisRoleplay/memphisroleplay.github.io/tree/main/',
+          lastVersion: 'current',
+          onlyIncludeVersions: ['current'],
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/MemphisRoleplay/memphisroleplay.github.io/tree/main/',
         },
@@ -60,13 +58,24 @@ const config = {
     ],
   ],
 
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'docs-rules',
+        path: 'docs-rules',
+        routeBasePath: 'regras',
+        sidebarPath: require.resolve('./sidebars.js'),
+      }, 
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
       image: 'img/memphis-social-card.jpg',
       navbar: {
-        title: 'Memphis Roleplay',
         logo: {
           alt: 'Memphis Roleplay',
           src: 'img/logo.png',
@@ -74,11 +83,16 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'right',
+            sidebarId: 'docsSidebar',
+            position: 'left',
             label: 'Documentação',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          {
+            to: '/regras',
+            label: 'Regras',
+            position: 'left',
+          },
+          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/memphisroleplay',
             label: 'GitHub',
